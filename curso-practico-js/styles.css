@@ -150,6 +150,17 @@ padding: 20px 20px 0 20px;
     padding: 24px;
 }
 
+.oculto {
+    left: -200px;
+    transform: translateX(-200px);
+    transition: transform 300ms;
+}
+
+.activo{
+    transform: translateX(200px);
+    transition: transform 300ms;
+}
+
 .mobile-menu a{
     text-decoration: none;
     color: var(--black);
@@ -185,6 +196,8 @@ padding: 20px 20px 0 20px;
     bottom: 0;
 }
 
+
+/*Media Queries*/
 @media (max-width: 640px) {
 .menu {
     display: block;
@@ -193,6 +206,15 @@ padding: 20px 20px 0 20px;
     display: none;
 }
 .navbar-email {
+    display: none;
+}
+.desktop-menu{
+    display: none;
+}
+}
+
+@media (min-width: 641px){
+.mobile-menu{
     display: none;
 }
 }
